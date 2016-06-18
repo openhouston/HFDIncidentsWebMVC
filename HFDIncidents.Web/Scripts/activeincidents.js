@@ -237,6 +237,10 @@ var google = google || {};
             typeImage = contentPath + 'img/paleblue_MarkerE.png';
             zIndex = 1;
         }
+        else if (itype.match('^CRASH/')
+            || itype.match('^TRAFFIC HAZARD/')) {
+            typeImage = contentPath + 'img/yellow_MarkerA.png';
+        }
         else if (itype.contains('FIRE') && (itype !== 'CHECK FOR FIRE')) {
             typeImage = contentPath + 'img/red_MarkerF.png';
         }
